@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"> 
+    <script src="https://kit.fontawesome.com/3c5801946c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+   <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <form class="form-control" id="stdForm">
+                        <div class="form-group">
+                            <label for="fName">First Name<span>*</span></label>
+                            <input type="text" required class="form-control mb-3" id="fName">
+                        </div>
+                        <div class="form-group">
+                            <label for="lName">Last Name<span>*</span></label>
+                            <input type="text" required class="form-control mb-3" id="lName">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email<span>*</span></label>
+                            <input type="text" required class="form-control mb-3" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact">Contact<span>*</span></label>
+                            <input type="number" required class="form-control mb-3" id="contact">
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-sm btn btn-outline-primary" id="addStdBtn">Add Student</button>
+                            <button class="btn-sm btn btn-outline-primary d-none" id="updateStdBtn">Update Student</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Seriol No</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Email</th>
+                                    <th>Contact</th>
+                                    <th>Edit</th>
+                                    <th>Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody id="stdList">
+                                <!-- <button class="btn btn-sm btn-outline-info">Edit</button> -->
+                                <!-- <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
